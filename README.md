@@ -1,5 +1,5 @@
  # Face Mask Detection                   
-
+                   
 This project uses a Faster R-CNN model to detect whether faces are wearing masks. The idea came from a Kaggle discussion and the notebook by [alperkaraca1](https://www.kaggle.com/code/alperkaraca1/faster-r-cnn-face-mask-detection), released under the Apache 2.0 license. The dataset is from [Andrew Mvd’s Face Mask Detection](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection/data).
 
 ## How It Works
