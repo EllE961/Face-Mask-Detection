@@ -1,0 +1,8 @@
+# Tested with Python 3.10, torch 1.13.1, torchvision 0.14.1, opencv-python 4.11.0, scikit-learn 1.2.2
+torch>=1.13
+torchvision>=0.14
+opencv-python>=4.8
+numpy>=1.24
+pillow>=9.0
+scikit-learn>=1.0
+matplotlib>=3.7

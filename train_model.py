@@ -61,7 +61,7 @@ def main():
     annotations_dir = "data/annotations"
     dataset = FaceMaskDataset(images_dir, annotations_dir)
     train_data, test_data = train_test_split(dataset, test_size=0.2, random_state=42)
-    train_loader = DataLoader(train_data, batch_size=2, shuffle=True, num_workers=2, collate_fn=collate_fn)
+    train_loader = DataLoader(train_data, batch_size=2, shuffle=True, num_workers=0, collate_fn=collate_fn)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = fasterrcnn_resnet50_fpn(weights=True)
     in_features = model.roi_heads.box_predictor.cls_score.in_features
