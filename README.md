@@ -8,11 +8,13 @@
 ![pytorch](https://img.shields.io/badge/torchvision-Faster%20R--CNN-d95926?style=flat-square&labelColor=0d0c0b)
 ![dataset](https://img.shields.io/badge/dataset-853%20images%20%C2%B7%204%2C072%20faces-9085e9?style=flat-square&labelColor=0d0c0b)
 ![license](https://img.shields.io/badge/license-MIT-1f1d1b?style=flat-square&labelColor=0d0c0b)
+![status](https://img.shields.io/badge/status-experimental-9085e9?style=flat-square&labelColor=0d0c0b)
 
 <img src="docs/assets/test_samples.png" alt="six held-out test images annotated by the app's drawing code: green Masked boxes with scores between 0.73 and 0.85, and one masked face with no box" width="100%">
 
 </div>
 
+This is an experiment and isn't finished: the only model I could train came from a 6-minute CPU run, which finds masked faces but never predicts No Mask, and the full 10-epoch configuration is untested (see Limitations).
 `train_model.py` fine-tunes torchvision's COCO-pretrained Faster R-CNN on the Kaggle
 [Face Mask Detection](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection) dataset by andrewmvd, and
 `face_mask_app.py` runs the saved model on the webcam. The approach follows the Kaggle notebook by
